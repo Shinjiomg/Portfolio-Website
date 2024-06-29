@@ -1,4 +1,4 @@
-<h1 align="center">Shannalotte's Portfolio</h1>
+<h1 align="center">Personal Portfolio</h1>
 
 ###
 
