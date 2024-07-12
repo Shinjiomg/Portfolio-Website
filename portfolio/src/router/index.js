@@ -7,10 +7,12 @@ import SidebarLayout from '../layouts/SidebarLayout.vue';
 const routes = [
     {
         path: '/',
+        redirect: '/about', // Redirige la raíz a /about
+    },
+    {
+        path: '/',
         component: SidebarLayout,
-        redirect: 'about',
         children: [
-            { path: '', component: About },
             { path: 'about', component: About },
             { path: 'resume', component: Resume },
             { path: 'contact', component: Contact },
