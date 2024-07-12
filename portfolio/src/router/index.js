@@ -8,6 +8,7 @@ const routes = [
     {
         path: '/',
         component: SidebarLayout,
+        redirect: 'about',
         children: [
             { path: '', component: About },
             { path: 'about', component: About },
