@@ -27,5 +27,11 @@ export default {
         "october": "Octubre",
         "november": "Noviembre",
         "december": "Diciembre"
+    },
+    "error": {
+        "title": "Página no encontrada :(",
+        "message": "Lo siento, la página que buscas no existe.",
+        "button": "Volver",
+        "code": "ERROR 404"
     }
 };

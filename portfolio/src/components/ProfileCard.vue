@@ -8,16 +8,11 @@
         </div>
         <div class="text-center mb-4">
             <h2 class="text-2xl font-roboto-slab mb-2"><strong>{{ name }}</strong></h2>
-            
             <LanguageSelector @language-changed="$emit('language-changed', $event)" />
-
             <p class="text-sm font-montserrat font-semibold bg-gray-100 px-6 py-2 w-max rounded-lg inline-block mb-4">
                 {{ profession }}</p>
-                
             <SocialLinks :social-links="socialLinks" />
-            
         </div>
-        
         <PersonalInfo :personal-info="personalInfo" />
     </div>
 </template>

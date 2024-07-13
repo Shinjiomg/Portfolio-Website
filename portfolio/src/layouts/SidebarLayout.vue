@@ -66,6 +66,10 @@ export default {
             ],
         };
     },
+    mounted() {
+        const savedLanguage = localStorage.getItem('language') || 'es';
+        this.$i18n.locale = savedLanguage;
+    },
     methods: {
         handleLanguageChange(language) {
             this.$i18n.locale = language;

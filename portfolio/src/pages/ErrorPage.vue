@@ -1,14 +1,13 @@
 <template>
-    <div className="container min-h-screen mx-auto flex flex-col items-center justify-center lg:flex-row">
-        <div className="w-full lg:w-1/2 text-center">
-            <p class="text-lg font-medium text-blue-500 dark:text-blue-400">ERROR 404</p>
-            <h1 class="mt-3 text-2xl font-semibold md:text-3xl">Page not found :(</h1>
-            <p class="mt-4 text-gray-500 dark:text-gray-400">Sorry, the page you're searching doesn't exist.
-            </p>
+    <div class="container min-h-screen mx-auto flex flex-col items-center justify-center lg:flex-row">
+        <div class="w-full lg:w-1/2 text-center">
+            <p class="text-lg font-medium text-blue-500 dark:text-blue-400">{{ $t('error.code') }}</p>
+            <h1 class="mt-3 text-2xl font-semibold md:text-3xl">{{ $t('error.title') }}</h1>
+            <p class="mt-4 text-gray-500 dark:text-gray-400">{{ $t('error.message') }}</p>
             <p class="mt-5 text-md text-gray-500">
-                <Button type="button" class="mx-auto">
-                    Go back <span aria-hidden="true">&rarr;</span>
-                </Button>
+                <button type="button" class="mx-auto btn">
+                    {{ $t('error.button') }} <span aria-hidden="true">&rarr;</span>
+                </button>
             </p>
         </div>
         <div ref="lottieContainer" class="h-90 w-90"></div>
@@ -37,5 +36,3 @@ export default {
     },
 };
 </script>
-<style>
-</style>

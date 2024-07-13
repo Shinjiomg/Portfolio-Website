@@ -35,10 +35,20 @@ addIcons(BiGithub,
 
 import messages from './locals/index';
 
+// Detecta el idioma del navegador
+const browserLanguage = navigator.language.split('-')[0];
+
+// Obtiene el idioma desde localStorage, o usa el idioma del navegador como predeterminado
+const defaultLanguage = localStorage.getItem('language') || (browserLanguage === 'es' ? 'es' : 'en');
+
 const i18n = createI18n({
-    locale: 'en',  // Establece el idioma por defecto aquí
-    fallbackLocale: 'en',
+    locale: defaultLanguage, // Usa el idioma detectado o el idioma del navegador
+    fallbackLocale: 'es',
     messages,  // Utiliza los mensajes importados
 });
 
-createApp(App).use(router).use(i18n).component("v-icon", OhVueIcon).mount('#app');
+createApp(App)
+    .use(router)
+    .use(i18n)
+    .component("v-icon", OhVueIcon)
+    .mount('#app');
