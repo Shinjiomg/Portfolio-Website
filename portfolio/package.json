@@ -13,6 +13,7 @@
     "material-icons": "^1.13.12",
     "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.4.21",
+    "vue-i18n": "^9.13.1",
     "vue-router": "^4.0.13"
   },
   "devDependencies": {
