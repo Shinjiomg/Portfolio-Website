@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen">
+    <div class="flex h-screen background">
         <aside class="w-max text-black p-4 mt-20">
             <div class="card relative">
                 <img :src="profileImage" class="rounded-xl w-56 mx-auto -mt-28 mb-4" alt="Profile">
@@ -69,18 +69,18 @@ export default {
                 { url: 'https://github.com/Shinjiomg', icon: 'bi-github', color: '#000' },
                 { url: 'https://www.linkedin.com/in/jhonatandavidbecerradonado-frontend/', icon: 'co-linkedin-in', color: '#2980b9' },
                 { url: 'https://www.facebook.com/jhonatan7w7/', icon: 'co-facebook-f', color: '#1DA1F2' },
-                { url: 'https://www.instagram.com/shannalotte', icon: 'bi-instagram', color: '#E1306C' }
+                { url: 'https://www.instagram.com/shannalotte', icon: 'bi-instagram', color: '#E1306C' },
             ],
             personalInfo: [
                 { label: 'Phone', value: '(+57) 3015703750', icon: 'ri-smartphone-line', iconColor: '#1CA085' },
                 { label: 'Email', value: 'yonkitas9@gmail.com', icon: 'md-email-round', iconColor: '#87c1e8' },
                 { label: 'Location', value: 'Soacha, Colombia', icon: 'hi-solid-location-marker', iconColor: 'red' },
-                { label: 'Birthday', value: 'June 07, 2001', icon: 'fa-calendar-alt', iconColor: 'purple' }
+                { label: 'Birthday', value: 'June 07, 2001', icon: 'fa-calendar-alt', iconColor: 'purple' },
             ],
             menuItems: [
                 { label: 'About', link: '/about', icon: 'fa-regular-address-card' },
                 { label: 'Resume', link: '/resume', icon: 'md-contactpage-outlined' },
-                { label: 'Contact', link: '/contact', icon: 'md-contacts-outlined' }
+                { label: 'Contact', link: '/contact', icon: 'md-contacts-outlined' },
             ]
         };
     },
@@ -98,5 +98,9 @@ export default {
 
 .hover\:bg-blue-500:hover {
     @apply bg-blue-500 text-white;
+}
+
+.background {
+    background-color: #D6EFD8;
 }
 </style>

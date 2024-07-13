@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lottie-web": "^5.12.2",
     "material-icons": "^1.13.12",
     "oh-vue-icons": "^1.0.0-rc3",
     "vue": "^3.4.21",
