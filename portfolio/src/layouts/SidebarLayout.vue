@@ -4,29 +4,26 @@
         <aside class="md:text-black p-4 md:mt-20">
             <div class="card md:relative">
                 <div class="md:hidden">
-                    <!-- Imagen en la parte superior en móvil -->
-                    <img :src="profileImage" class="rounded-xl w-48 mb-4 mx-auto" alt="Profile">
+                    <img :src="profileImage" class="rounded-full w-48 mb-4 mx-auto" alt="Profile">
                 </div>
                 <div class="hidden md:block">
-                    <!-- Imagen relativa en escritorio -->
                     <img :src="profileImage" class="rounded-xl w-56 mx-auto -mt-28 mb-4" alt="Profile">
                 </div>
-                <!-- Contenido restante -->
-                <div class="text-center mb-4">
+                <div class="text-center mb-6">
                     <h2 class="text-2xl font-roboto-slab mb-2"><strong>{{ name }}</strong></h2>
                     <p
-                        class="text-sm font-montserrat font-semibold bg-gray-100 px-6 py-2 w-max rounded-lg inline-block">
+                        class="text-sm font-montserrat font-semibold bg-gray-100 px-6 py-2 w-max rounded-lg inline-block mb-6">
                         {{ profession }}</p>
-                    <div class="mt-4 flex justify-center">
+                    <div class="mt-4 flex justify-center mb-6">
                         <a v-for="(social, index) in socialLinks" :key="index" :href="social.url"
-                            class="flex items-center justify-center rounded-xl h-10 w-10 mx-1 bg-gray-100 p-1 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10"
+                            class="flex items-center justify-center rounded-xl h-10 w-10 mx-3 bg-gray-100 mb-6 p-1 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10"
                             :style="{ backgroundColor: social.isHover ? '#4299e1' : '#F3F4F6' }"
                             @mouseover="social.isHover = true" @mouseleave="social.isHover = false">
                             <v-icon :name="social.icon" :scale="1.2" :fill="social.isHover ? '#fff' : social.color" />
                         </a>
                     </div>
                 </div>
-                <div class="bg-gray-100 rounded-xl p-2 w-full mb-4 font-montserrat">
+                <div class="bg-gray-100 rounded-xl p-2 w-full  font-montserrat">
                     <ul>
                         <li v-for="(item, index) in personalInfo" :key="index" class="flex items-center rounded-xl p-2">
                             <div class="bg-white rounded-xl shadow-md p-1 flex items-center">
@@ -40,19 +37,17 @@
                     </ul>
                 </div>
                 <div class="text-center">
-                    <!-- TODO: Agregar botón dinámico -->
                 </div>
             </div>
         </aside>
         <main class=" md:flex-1 p-4">
-            <div class="card mb-20 md:h-full">
+            <div class="card mb-24 md:h-full">
                 <router-view></router-view>
             </div>
         </main>
 
-        <!-- Aside Derecho (Navbar Inferior en Móvil y Navbar Lateral en Escritorio) -->
-        <aside class="text-black md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white shadow-md">
-            <div class="bg-white rounded-xl shadow-sm p-4 font-montserrat font-medium text-sm">
+        <aside class="text-black md:hidden fixed bottom-0 left-0 right-0 z-50 shadow-md p-6">
+            <div class="bg-white rounded-xl shadow-md p-4 font-montserrat font-medium text-sm">
                 <nav class="flex justify-between items-center">
                     <router-link v-for="(menuItem, index) in menuItems" :key="index" :to="menuItem.link"
                         class="flex flex-col items-center justify-center w-full text-center"
@@ -116,7 +111,7 @@ export default {
 
 <style scoped>
 .card {
-    @apply bg-white rounded-xl shadow-sm p-7;
+    @apply bg-white rounded-xl shadow-md p-7;
 }
 
 .hover\:bg-blue-500:hover {
@@ -124,7 +119,7 @@ export default {
 }
 
 .background {
-    background-color: #D6EFD8;
+    background-color: #F3F4F6;
 }
 
 .md\\:hidden {
