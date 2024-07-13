@@ -2,7 +2,7 @@
     <div class="language-selector">
         <v-icon name="co-language" class="text-lg"></v-icon>
         <select id="language" classv-model="selectedLanguage" @change="changeLanguage"
-            class="text-sm font-montserrat font-semibold px-6 py-2 w-max rounded-lg mb-4">
+            class="text-sm font-montserrat font-semibold px-6 py-2 w-max rounded-lg mb-4 bg-transparent">
             <option value="en">English</option>
             <option value="es">Español</option>
         </select>
