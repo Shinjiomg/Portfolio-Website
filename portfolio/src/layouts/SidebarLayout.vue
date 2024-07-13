@@ -4,19 +4,19 @@
         <aside class="md:text-black p-4 md:mt-20">
             <div class="card md:relative">
                 <div class="md:hidden">
-                    <img :src="profileImage" class="rounded-full w-48 mb-4 mx-auto" alt="Profile">
+                    <img :src="profileImage" class="rounded-full w-48 mb-3 mx-auto" alt="Profile">
                 </div>
                 <div class="hidden md:block">
-                    <img :src="profileImage" class="rounded-xl w-56 mx-auto -mt-28 mb-4" alt="Profile">
+                    <img :src="profileImage" class="rounded-xl w-56 mx-auto -mt-28 mb-3" alt="Profile">
                 </div>
-                <div class="text-center mb-6">
+                <div class="text-center mb-4">
                     <h2 class="text-2xl font-roboto-slab mb-2"><strong>{{ name }}</strong></h2>
                     <p
-                        class="text-sm font-montserrat font-semibold bg-gray-100 px-6 py-2 w-max rounded-lg inline-block mb-6">
+                        class="text-sm font-montserrat font-semibold bg-gray-100 px-6 py-2 w-max rounded-lg inline-block mb-4">
                         {{ profession }}</p>
-                    <div class="mt-4 flex justify-center mb-6">
+                    <div class="mt-4 flex justify-center mb-4">
                         <a v-for="(social, index) in socialLinks" :key="index" :href="social.url"
-                            class="flex items-center justify-center rounded-xl h-10 w-10 mx-3 bg-gray-100 mb-6 p-1 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10"
+                            class="flex items-center justify-center rounded-xl h-10 w-10 mx-3 bg-gray-100 mb-4 p-1 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10"
                             :style="{ backgroundColor: social.isHover ? '#4299e1' : '#F3F4F6' }"
                             @mouseover="social.isHover = true" @mouseleave="social.isHover = false">
                             <v-icon :name="social.icon" :scale="1.2" :fill="social.isHover ? '#fff' : social.color" />
