@@ -1,8 +1,8 @@
 <template>
     <div class="language-selector">
-        <v-icon name="co-language" class="text-lg"></v-icon>
+        <v-icon name="co-language" scale="1.2"></v-icon>
         <select v-model="selectedLanguage" @change="changeLanguage"
-            class="text-sm font-montserrat font-semibold px-6 py-2 w-max rounded-lg mb-4 bg-transparent">
+            class="text-sm font-montserrat font-semibold px-6 py-2 w-max rounded-3xl mb-4 bg-transparent">
             <option value="es">Español</option>
             <option value="en">English</option>
         </select>

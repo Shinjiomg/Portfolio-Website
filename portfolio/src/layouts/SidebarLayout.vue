@@ -6,9 +6,11 @@
                 @language-changed="handleLanguageChange" />
         </aside>
         <main class="md:flex-1 p-4">
-            <div class="bg-white rounded-xl shadow-md p-7 mb-24 md:h-full">
-                <router-view></router-view>
+            <div class="bg-white rounded-3xl shadow-md p-7 mb-24 md:h-full">
+                <router-view class="pt-8 md:p-8"></router-view>
+                <p class="text-sm text-gray-500">&copy; {{ new Date().getFullYear() }} Jhonatan Becerra.</p>
             </div>
+            
         </main>
         <MobileMenu :menu-items="translatedMenuItems" />
         <DesktopMenu :menu-items="translatedMenuItems" />
@@ -56,7 +58,7 @@ export default {
             personalInfo: [
                 { label: 'phone', value: '(+57) 3015703750', icon: 'ri-smartphone-line', iconColor: '#1CA085' },
                 { label: 'email', value: 'yonkitas9@gmail.com', icon: 'md-email-round', iconColor: '#87c1e8' },
-                { label: 'location', value: 'Soacha, Colombia', icon: 'hi-solid-location-marker', iconColor: 'red' },
+                { label: 'location', value: 'Soacha, Colombia', icon: 'hi-solid-location-marker', iconColor: '#ff7690' },
                 { label: 'birthday', value: 'June 07 2001', icon: 'fa-calendar-alt', iconColor: 'purple' },
             ],
             menuItems: [

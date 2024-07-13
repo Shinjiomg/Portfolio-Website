@@ -17,7 +17,11 @@ import {
     MdContacts,
     CoFacebookF,
     BiInstagram,
-    CoLanguage
+    CoLanguage,
+    BiCodeSlash,
+    OiApps,
+    BiWindowDesktop,
+    MdVideogameasset
 } from "oh-vue-icons/icons";
 
 addIcons(BiGithub,
@@ -30,21 +34,21 @@ addIcons(BiGithub,
     MdContacts,
     CoFacebookF,
     BiInstagram,
-    CoLanguage
+    CoLanguage,
+    BiCodeSlash,
+    OiApps,
+    BiWindowDesktop,
+    MdVideogameasset
 );
 
 import messages from './locals/index';
 
-// Detecta el idioma del navegador
 const browserLanguage = navigator.language.split('-')[0];
-
-// Obtiene el idioma desde localStorage, o usa el idioma del navegador como predeterminado
 const defaultLanguage = localStorage.getItem('language') || (browserLanguage === 'es' ? 'es' : 'en');
-
 const i18n = createI18n({
-    locale: defaultLanguage, // Usa el idioma detectado o el idioma del navegador
+    locale: defaultLanguage,
     fallbackLocale: 'es',
-    messages,  // Utiliza los mensajes importados
+    messages,
 });
 
 createApp(App)

@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-gray-100 rounded-xl p-2 w-full font-montserrat">
+    <div class="bg-gray-100 rounded-3xl p-4 w-full font-montserrat">
         <ul>
-            <li v-for="(item, index) in personalInfo" :key="index" class="flex items-center rounded-xl p-2">
+            <li v-for="(item, index) in personalInfo" :key="index" class="flex items-center rounded-3xl p-2">
                 <div class="bg-white rounded-xl shadow-md p-1 flex items-center">
                     <v-icon :name="item.icon" :scale="2" :fill="item.iconColor" />
                 </div>

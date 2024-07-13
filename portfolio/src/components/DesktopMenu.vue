@@ -1,6 +1,6 @@
 <template>
     <aside class="p-4 text-black hidden md:block">
-        <div class="bg-white rounded-xl shadow-md p-7 font-montserrat font-medium text-sm">
+        <div class="bg-white rounded-3xl shadow-md p-7 font-montserrat font-medium text-sm">
             <nav class="flex flex-col items-center">
                 <ul v-for="(menuItem, index) in menuItems" :key="index"
                     class="w-full bg-gray-100 rounded-xl mb-4 mx-2 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10">
