@@ -1,27 +1,40 @@
 <template>
-    <div class="flex h-screen background">
-        <aside class="w-max text-black p-4 mt-20">
-            <div class="card relative">
-                <img :src="profileImage" class="rounded-xl w-56 mx-auto -mt-28 mb-4" alt="Profile">
+    <div class="flex flex-col md:flex-row min-h-screen background">
+
+        <aside class="md:text-black p-4 md:mt-20">
+            <div class="card md:relative">
+                <div class="md:hidden">
+                    <!-- Imagen en la parte superior en móvil -->
+                    <img :src="profileImage" class="rounded-xl w-48 mb-4 mx-auto" alt="Profile">
+                </div>
+                <div class="hidden md:block">
+                    <!-- Imagen relativa en escritorio -->
+                    <img :src="profileImage" class="rounded-xl w-56 mx-auto -mt-28 mb-4" alt="Profile">
+                </div>
+                <!-- Contenido restante -->
                 <div class="text-center mb-4">
-                    <h2 class="text-lg"><strong>{{ name }}</strong></h2>
-                    <p class="text-sm">{{ profession }}</p>
+                    <h2 class="text-2xl font-roboto-slab mb-2"><strong>{{ name }}</strong></h2>
+                    <p
+                        class="text-sm font-montserrat font-semibold bg-gray-100 px-6 py-2 w-max rounded-lg inline-block">
+                        {{ profession }}</p>
                     <div class="mt-4 flex justify-center">
                         <a v-for="(social, index) in socialLinks" :key="index" :href="social.url"
-                            class="flex items-center justify-center rounded-xl h-10 w-10 mx-1 bg-gray-100 p-1 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10">
-                            <v-icon :name="social.icon" :scale="1.2" :fill="social.color" />
+                            class="flex items-center justify-center rounded-xl h-10 w-10 mx-1 bg-gray-100 p-1 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10"
+                            :style="{ backgroundColor: social.isHover ? '#4299e1' : '#F3F4F6' }"
+                            @mouseover="social.isHover = true" @mouseleave="social.isHover = false">
+                            <v-icon :name="social.icon" :scale="1.2" :fill="social.isHover ? '#fff' : social.color" />
                         </a>
                     </div>
                 </div>
-                <div class="bg-gray-100 rounded-xl p-2 pr-16 mb-4">
+                <div class="bg-gray-100 rounded-xl p-2 w-full mb-4 font-montserrat">
                     <ul>
                         <li v-for="(item, index) in personalInfo" :key="index" class="flex items-center rounded-xl p-2">
                             <div class="bg-white rounded-xl shadow-md p-1 flex items-center">
                                 <v-icon :name="item.icon" :scale="2" :fill="item.iconColor" />
                             </div>
                             <div class="ml-2">
-                                <p class="text-xs">{{ item.label }}</p>
-                                <p class="text-base">{{ item.value }}</p>
+                                <p class="text-xs font-black">{{ item.label }}</p>
+                                <p class="text-base font-medium">{{ item.value }}</p>
                             </div>
                         </li>
                     </ul>
@@ -31,22 +44,36 @@
                 </div>
             </div>
         </aside>
-
-        <main class="flex-1 p-4 overflow-y-auto">
-            <div class="card h-full">
+        <main class=" md:flex-1 p-4">
+            <div class="card mb-20 md:h-full">
                 <router-view></router-view>
             </div>
         </main>
 
-        <aside class="text-black p-4">
-            <div class="card">
+        <!-- Aside Derecho (Navbar Inferior en Móvil y Navbar Lateral en Escritorio) -->
+        <aside class="text-black md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white shadow-md">
+            <div class="bg-white rounded-xl shadow-sm p-4 font-montserrat font-medium text-sm">
+                <nav class="flex justify-between items-center">
+                    <router-link v-for="(menuItem, index) in menuItems" :key="index" :to="menuItem.link"
+                        class="flex flex-col items-center justify-center w-full text-center"
+                        :class="[$route.path === menuItem.link ? 'text-blue-500' : 'text-gray-600']">
+                        <v-icon :name="menuItem.icon" class="text-lg mb-1"></v-icon>
+                        <span>{{ menuItem.label }}</span>
+                    </router-link>
+                </nav>
+            </div>
+        </aside>
+
+        <aside class="p-4 text-black hidden md:block">
+            <div class="card font-montserrat font-medium text-sm">
                 <nav class="flex flex-col items-center">
                     <ul v-for="(menuItem, index) in menuItems" :key="index"
-                        class="w-full bg-gray-100 rounded-xl mb-4 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10">
+                        class="w-full bg-gray-100 rounded-xl mb-4 mx-2 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10">
                         <router-link :to="menuItem.link" class="block">
                             <li
-                                :class="[$route.path === menuItem.link ? 'bg-blue-500 text-white' : 'hover:bg-blue-500', 'flex flex-col items-center py-3 px-3 rounded-xl transition duration-300 ease-in-out']">
-                                <v-icon :name="menuItem.icon" scale="1.5" />
+                                :class="[$route.path === menuItem.link ? 'bg-blue-500 text-white' : 'hover:bg-blue-500',
+                                    'flex flex-col items-center py-3 px-3 rounded-xl transition duration-300 ease-in-out']">
+                                <v-icon :name="menuItem.icon" class="text-lg" />
                                 <span>{{ menuItem.label }}</span>
                             </li>
                         </router-link>
@@ -78,17 +105,13 @@ export default {
                 { label: 'Birthday', value: 'June 07, 2001', icon: 'fa-calendar-alt', iconColor: 'purple' },
             ],
             menuItems: [
-                { label: 'About', link: '/about', icon: 'fa-regular-address-card' },
-                { label: 'Resume', link: '/resume', icon: 'md-contactpage-outlined' },
-                { label: 'Contact', link: '/contact', icon: 'md-contacts-outlined' },
+                { label: 'About', link: '/about', icon: 'fa-regular-id-card' },
+                { label: 'Resume', link: '/resume', icon: 'ri-file-user-line' },
+                { label: 'Contact', link: '/contact', icon: 'md-contacts' },
             ]
         };
     },
-    mounted() {
-        console.log(this.$data);
-    }
 };
-
 </script>
 
 <style scoped>
@@ -102,5 +125,9 @@ export default {
 
 .background {
     background-color: #D6EFD8;
+}
+
+.md\\:hidden {
+    display: none;
 }
 </style>

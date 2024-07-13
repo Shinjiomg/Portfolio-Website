@@ -11,9 +11,9 @@ import {
     MdEmailRound,
     HiSolidLocationMarker,
     FaCalendarAlt,
-    FaRegularAddressCard,
-    MdContactpageOutlined,
-    MdContactsOutlined,
+    FaRegularIdCard,
+    RiFileUserLine,
+    MdContacts,
     CoFacebookF,
     BiInstagram
 } from "oh-vue-icons/icons";
@@ -23,9 +23,9 @@ addIcons(BiGithub,
     RiSmartphoneLine,
     MdEmailRound, HiSolidLocationMarker,
     FaCalendarAlt,
-    FaRegularAddressCard,
-    MdContactpageOutlined,
-    MdContactsOutlined,
+    FaRegularIdCard,
+    RiFileUserLine,
+    MdContacts,
     CoFacebookF,
     BiInstagram
 );
