@@ -7,7 +7,8 @@ export default {
             "email": "Email",
             "location": "Location",
             "birthday": "Birthday"
-        }
+        },
+        "download-cv": "Download CV"
     },
     "menu": {
         "about": "About",
@@ -42,7 +43,13 @@ export default {
             "web": "Web Development",
             "app": "App Development",
             "design": "UX/UI Design",
-            "videogames": "Video Games"
-        }
+            "videogames": "Video Games",
+            "info": {
+                "web": "Designer, developer, and Webmaster of responsive and accessible websites, using HTML, CSS, JavaScript, Angular, PHP, Vue, and Typescript.",
+                "app": "Co-author, designer, developer, and SCRUM Master of a health mobile application for the National University using IONIC and Typescript.",
+                "design": "Started in the world of UX/UI design with Figma, collaborator in the design and modeling of Wireframes and Mockups for the mobile application 'PeriOpera'.",
+                "videogames": "Inspired to start in the world of 2D video game creation."
+            }
+        },
     }
 };

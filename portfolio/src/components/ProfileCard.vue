@@ -4,7 +4,7 @@
             <img :src="profileImage" class="rounded-full w-48 mb-3 mx-auto" alt="Profile">
         </div>
         <div class="hidden md:block">
-            <img :src="profileImage" class="rounded-3xl w-56 mx-auto -mt-28 mb-3" alt="Profile">
+            <img :src="profileImage" class="rounded-3xl w-48 mx-auto -mt-28 mb-3" alt="Profile">
         </div>
         <div class="text-center mb-4">
             <h2 class="text-2xl font-roboto-slab mb-2"><strong>{{ name }}</strong></h2>
@@ -14,6 +14,9 @@
             <SocialLinks :social-links="socialLinks" />
         </div>
         <PersonalInfo :personal-info="personalInfo" />
+        <div class="mt-4 text-center">
+            <DownloadButton />
+        </div>
     </div>
 </template>
 
@@ -21,13 +24,15 @@
 import SocialLinks from './SocialLinks.vue';
 import PersonalInfo from './PersonalInfo.vue';
 import LanguageSelector from './LanguageSelector.vue';
+import DownloadButton from './DownloadButton.vue';
 
 export default {
     name: 'ProfileCard',
     components: {
         SocialLinks,
         PersonalInfo,
-        LanguageSelector
+        LanguageSelector,
+        DownloadButton
     },
     props: {
         profileImage: String,

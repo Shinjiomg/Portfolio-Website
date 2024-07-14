@@ -1,14 +1,14 @@
 <template>
     <div class="flex flex-col md:flex-row bg-[#F3F4F6] min-h-screen">
-        <aside class="md:text-black p-4 lg:mb-20 md:mt-20 xl:fixed">
+        <aside class="md:text-black p-4 lg:mb-20 md:mt-20">
             <ProfileCard :profile-image="profileImage" :name="$t('profile.name')" :profession="$t('profile.profession')"
                 :social-links="socialLinks" :personal-info="translatedPersonalInfo"
                 @language-changed="handleLanguageChange" />
         </aside>
-        <main class="p-4 xl:mr-48 xl:ml-[354px]">
+        <main class="p-4 xl:mr-[200px]">
             <div class="bg-white rounded-3xl shadow-md p-7 mb-20 xl:h-full flex flex-col justify-between">
                 <router-view class="pt-8 md:p-8"></router-view>
-                <p class="text-sm text-gray-500 self-center">&copy; {{ new Date().getFullYear() }} Jhonatan
+                <p class="mt-10 md:text-sm text-gray-500 self-center">&copy; {{ new Date().getFullYear() }} Jhonatan
                     Becerra</p>
             </div>
         </main>
