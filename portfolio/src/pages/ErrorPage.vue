@@ -5,7 +5,7 @@
             <h1 class="mt-3 text-2xl font-semibold md:text-3xl">{{ $t('error.title') }}</h1>
             <p class="mt-4 text-gray-500 dark:text-gray-400">{{ $t('error.message') }}</p>
             <p class="mt-5 text-md text-gray-500">
-                <button type="button" class="mx-auto btn">
+                <button type="button" class="mx-auto btn" @click="goToAbout">
                     {{ $t('error.button') }} <span aria-hidden="true">&rarr;</span>
                 </button>
             </p>
@@ -33,6 +33,9 @@ export default {
                 renderer: 'svg',
             });
         },
+        goToAbout() {
+            this.$router.push('/about');
+        }
     },
 };
 </script>

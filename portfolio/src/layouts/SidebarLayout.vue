@@ -5,7 +5,7 @@
                 :social-links="socialLinks" :personal-info="translatedPersonalInfo"
                 @language-changed="handleLanguageChange" />
         </aside>
-        <main class="p-4 xl:mr-[200px]">
+        <main class="p-4 xl:mr-[200px] w-full">
             <div class="bg-white rounded-3xl shadow-md p-7 mb-20 xl:h-full flex flex-col justify-between">
                 <router-view class="pt-8 md:p-8"></router-view>
                 <p class="mt-10 md:text-sm text-gray-500 self-center">&copy; {{ new Date().getFullYear() }} Jhonatan
