@@ -6,7 +6,7 @@
                 @language-changed="handleLanguageChange" />
         </aside>
         <main class="md:flex-1 p-4 md:ml-auto md:mr-auto md:max-w-6xl">
-            <div class="bg-white rounded-3xl shadow-md p-7 mb-24 md:h-full flex flex-col justify-between">
+            <div class="bg-white rounded-3xl shadow-md p-7 mb-24 xl:h-full flex flex-col justify-between">
                 <router-view class="pt-8 md:p-8 flex-1"></router-view>
                 <p class="text-sm text-gray-500 self-center">&copy; {{ new Date().getFullYear() }} Jhonatan
                     Becerra</p>

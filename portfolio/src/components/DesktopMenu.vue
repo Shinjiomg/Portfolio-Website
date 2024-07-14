@@ -1,5 +1,5 @@
 <template>
-    <aside class="p-4 text-black hidden md:block">
+    <aside class="p-4 text-black hidden xl:block">
         <div class="bg-white rounded-3xl shadow-md p-7 font-montserrat font-medium text-sm">
             <nav class="flex flex-col items-center">
                 <ul v-for="(menuItem, index) in menuItems" :key="index"
