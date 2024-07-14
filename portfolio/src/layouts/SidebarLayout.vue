@@ -1,21 +1,22 @@
 <template>
     <div class="flex flex-col md:flex-row min-h-screen background">
-        <aside class="md:text-black p-4 md:mt-20">
+        <aside class="md:text-black p-4 md:mt-20 md:fixed md:left-0 md:top-0 md:bottom-0">
             <ProfileCard :profile-image="profileImage" :name="$t('profile.name')" :profession="$t('profile.profession')"
                 :social-links="socialLinks" :personal-info="translatedPersonalInfo"
                 @language-changed="handleLanguageChange" />
         </aside>
-        <main class="md:flex-1 p-4">
+        <main class="md:flex-1 p-4 md:ml-auto md:mr-auto md:max-w-6xl">
             <div class="bg-white rounded-3xl shadow-md p-7 mb-24 md:h-full flex flex-col justify-between">
                 <router-view class="pt-8 md:p-8 flex-1"></router-view>
-                <p class="text-sm text-gray-500 self-center">&copy; {{ new Date().getFullYear() }} Jhonatan Becerra</p>
+                <p class="text-sm text-gray-500 self-center">&copy; {{ new Date().getFullYear() }} Jhonatan
+                    Becerra</p>
             </div>
         </main>
-        <MobileMenu :menu-items="translatedMenuItems" />
-        <DesktopMenu :menu-items="translatedMenuItems" />
+        <MobileMenu  :menu-items="translatedMenuItems" />
+        <DesktopMenu class="md:ml-auto md:mr-0 md:fixed md:left-auto md:right-0 md:top-0 md:bottom-0"
+            :menu-items="translatedMenuItems" />
     </div>
 </template>
-
 <script>
 import ProfileCard from '../components/ProfileCard.vue';
 import MobileMenu from '../components/MobileMenu.vue';

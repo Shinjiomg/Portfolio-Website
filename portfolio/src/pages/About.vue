@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div class="flex items-center mb-8">
+        <div class="flex items-center mb-6">
             <h1 class="text-4xl font-roboto-slab font-black mr-4 whitespace-nowrap">{{ $t('about.me') }}</h1>
             <div class="w-1/3 h-1 bg-blue-500"></div>
         </div>
-        <p class="text-lg font-montserrat font-medium mb-8">{{ $t('about.content') }}</p>
-        <h2 class="text-3xl font-roboto-slab font-medium mb-8">{{ $t('about.what-i-do') }}</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <p class="text-lg font-montserrat font-medium mb-6">{{ $t('about.content') }}</p>
+        <h2 class="text-3xl font-roboto-slab font-medium mb-6">{{ $t('about.what-i-do') }}</h2>
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
             <div class="bg-gray-100 rounded-3xl p-7">
                 <div class="md:flex md:p-2">
                     <v-icon name="bi-code-slash" scale="3" class="mr-4" fill="#379cee"></v-icon>
@@ -52,8 +52,6 @@
                 </div>
             </div>
         </div>
-        <footer>
-        </footer>
     </div>
 </template>
 
