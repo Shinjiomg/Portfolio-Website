@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col md:flex-row min-h-screen background">
-        <aside class="md:text-black p-4 md:mt-20 md:fixed md:left-0 md:top-0 md:bottom-0">
+        <aside class="md:text-black p-4 md:mt-20 md:left-0 md:top-0 md:bottom-0">
             <ProfileCard :profile-image="profileImage" :name="$t('profile.name')" :profession="$t('profile.profession')"
                 :social-links="socialLinks" :personal-info="translatedPersonalInfo"
                 @language-changed="handleLanguageChange" />
@@ -13,7 +13,7 @@
             </div>
         </main>
         <MobileMenu  :menu-items="translatedMenuItems" />
-        <DesktopMenu class="md:ml-auto md:mr-0 md:fixed md:left-auto md:right-0 md:top-0 md:bottom-0"
+        <DesktopMenu class="md:ml-auto md:mr-0 md:left-auto md:right-0 md:top-0 md:bottom-0"
             :menu-items="translatedMenuItems" />
     </div>
 </template>
