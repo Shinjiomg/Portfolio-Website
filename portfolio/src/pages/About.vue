@@ -7,39 +7,13 @@
         <p class="xl:text-lg font-montserrat font-medium mb-6 text-justify">{{ $t('about.content') }}</p>
         <h2 class="text-3xl font-roboto-slab font-medium mb-6">{{ $t('about.what-i-do') }}</h2>
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-6">
-            <div class="bg-gray-100 rounded-3xl p-7">
+            <div v-for="(card, index) in jobCards" :key="index"
+                :class="[index % 2 === 1 ? 'bg-gray-100' : 'bg-[#edf4fa]', 'rounded-3xl p-7']">
                 <div class="md:flex md:p-2">
-                    <v-icon name="bi-code-slash" scale="3" class="mr-4" fill="#379cee"></v-icon>
+                    <v-icon :name="card.icon" scale="3" class="mr-4" :fill="card.iconColor"></v-icon>
                     <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.web') }}</h3>
-                        <p class="text-md font-montserrat">{{ $t('about.jobs.info.web') }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-[#edf4fa] rounded-3xl p-7">
-                <div class="md:flex md:p-2">
-                    <v-icon name="oi-apps" scale="3" class="mr-4" fill="#ff7690"></v-icon>
-                    <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.app') }}</h3>
-                        <p class="text-md font-montserrat">{{ $t('about.jobs.info.app') }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-[#edf4fa] rounded-3xl p-7">
-                <div class="md:flex md:p-2">
-                    <v-icon name="bi-window-desktop" scale="3" class="mr-4" fill="#ca7ee2"></v-icon>
-                    <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.design') }}</h3>
-                        <p class="text-md font-montserrat">{{ $t('about.jobs.info.design') }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-gray-100 rounded-3xl p-7">
-                <div class="md:flex md:p-2">
-                    <v-icon name="md-videogameasset" scale="3" class="mr-4" fill="#1ca085"></v-icon>
-                    <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.videogames') }}</h3>
-                        <p class="text-md font-montserrat">{{ $t('about.jobs.info.videogames') }}</p>
+                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t(card.title) }}</h3>
+                        <p class="text-md font-montserrat">{{ $t(card.description) }}</p>
                     </div>
                 </div>
             </div>
@@ -49,6 +23,36 @@
 
 <script>
 export default {
-    name: 'About'
+    name: 'About',
+    data() {
+        return {
+            jobCards: [
+                {
+                    title: 'about.jobs.web',
+                    description: 'about.jobs.info.web',
+                    icon: 'bi-code-slash',
+                    iconColor: '#379cee'
+                },
+                {
+                    title: 'about.jobs.app',
+                    description: 'about.jobs.info.app',
+                    icon: 'oi-apps',
+                    iconColor: '#ff7690'
+                },
+                {
+                    title: 'about.jobs.design',
+                    description: 'about.jobs.info.design',
+                    icon: 'bi-window-desktop',
+                    iconColor: '#ca7ee2'
+                },
+                {
+                    title: 'about.jobs.videogames',
+                    description: 'about.jobs.info.videogames',
+                    icon: 'md-videogameasset',
+                    iconColor: '#1ca085'
+                },
+            ]
+        };
+    }
 };
 </script>

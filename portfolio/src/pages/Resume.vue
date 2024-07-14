@@ -11,7 +11,7 @@
                     <h2 class="text-2xl font-montserrat font-black">{{ $t(section.title) }}</h2>
                 </div>
                 <div v-for="(item, itemIndex) in section.items" :key="itemIndex"
-                    :class="[itemIndex % 2 === 0 ? 'bg-gray-100' : 'bg-[#edf4fa]', 'rounded-3xl p-7 mb-6']">
+                    :class="[itemIndex % 2 === 1 ? 'bg-[#edf4fa]' : 'bg-gray-100', 'rounded-3xl p-7 mb-6']">
                     <div class="md:flex md:p-2">
                         <div>
                             <p class="text-md font-montserrat">{{ item.date }}</p>
@@ -110,7 +110,6 @@ export default {
                 'resume.problem-solving',
                 'resume.team-work',
                 'resume.progressive-learning',
-                // Añade más habilidades según necesites
             ]
         };
     }
