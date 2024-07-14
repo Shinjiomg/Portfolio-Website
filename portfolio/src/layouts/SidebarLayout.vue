@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col md:flex-row bg-[#F3F4F6] min-h-screen">
-        <aside class="md:text-black p-4 lg:mb-20 md:mt-20 fixed">
+        <aside class="md:text-black p-4 lg:mb-20 md:mt-20 xl:fixed">
             <ProfileCard :profile-image="profileImage" :name="$t('profile.name')" :profession="$t('profile.profession')"
                 :social-links="socialLinks" :personal-info="translatedPersonalInfo"
                 @language-changed="handleLanguageChange" />
