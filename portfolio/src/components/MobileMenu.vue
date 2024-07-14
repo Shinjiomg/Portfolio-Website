@@ -1,6 +1,6 @@
 <template>
-    <aside class="text-black xl:hidden fixed bottom-0 left-0 right-0 z-50 shadow-md p-6">
-        <div class="bg-white rounded-3xl shadow-md p-4 font-montserrat font-medium text-sm">
+    <aside class="text-black xl:hidden fixed bottom-0 left-0 right-0 z-50 shadow-md">
+        <div class="bg-white shadow-md p-4 font-montserrat font-medium text-sm">
             <nav class="flex justify-between items-center">
                 <router-link v-for="(menuItem, index) in menuItems" :key="index" :to="menuItem.link"
                     class="flex flex-col items-center justify-center w-full text-center"
