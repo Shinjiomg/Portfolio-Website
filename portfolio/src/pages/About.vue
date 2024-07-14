@@ -11,10 +11,8 @@
                 <div class="md:flex md:p-2">
                     <v-icon name="bi-code-slash" scale="3" class="mr-4" fill="#379cee"></v-icon>
                     <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">Web Development</h3>
-                        <p class="text-md font-montserrat">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                            diam euismod tincidunt volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam euismod tincidunt volutpat.</p>
+                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.web') }}</h3>
+                        <p class="text-md font-montserrat">{{ $t('about.content') }}</p>
                     </div>
                 </div>
             </div>
@@ -22,10 +20,8 @@
                 <div class="md:flex md:p-2">
                     <v-icon name="oi-apps" scale="3" class="mr-4" fill="#ff7690"></v-icon>
                     <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">App Development</h3>
-                        <p class="text-md font-montserrat">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                            diam euismod tincidunt volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam euismod tincidunt volutpat.</p>
+                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.app') }}</h3>
+                        <p class="text-md font-montserrat">{{ $t('about.content') }}</p>
                     </div>
                 </div>
             </div>
@@ -33,10 +29,8 @@
                 <div class="md:flex md:p-2">
                     <v-icon name="bi-window-desktop" scale="3" class="mr-4" fill="#ca7ee2"></v-icon>
                     <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">UI/UX Design</h3>
-                        <p class="text-md font-montserrat">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                            diam euismod tincidunt volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam euismod tincidunt volutpat.</p>
+                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.design') }}</h3>
+                        <p class="text-md font-montserrat">{{ $t('about.content') }}</p>
                     </div>
                 </div>
             </div>
@@ -44,10 +38,8 @@
                 <div class="md:flex md:p-2">
                     <v-icon name="md-videogameasset" scale="3" class="mr-4" fill="#1ca085"></v-icon>
                     <div>
-                        <h3 class="text-xl font-montserrat font-extrabold">Videogames</h3>
-                        <p class="text-md font-montserrat">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                            diam euismod tincidunt volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                            sed diam euismod tincidunt volutpat.</p>
+                        <h3 class="text-xl font-montserrat font-extrabold">{{ $t('about.jobs.videogames') }}</h3>
+                        <p class="text-md font-montserrat">{{ $t('about.content') }}</p>
                     </div>
                 </div>
             </div>

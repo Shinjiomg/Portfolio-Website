@@ -33,5 +33,16 @@ export default {
         "message": "Lo siento, la página que buscas no existe.",
         "button": "Volver",
         "code": "ERROR 404"
+    },
+    "about": {
+        "me": "Acerca de Mí",
+        "content": "Soy desarrollador de software con experiencia en lenguajes de programación web como HTML, Angular, Ionic, Typescript, gestores de contenido (CMS), y experiencia en investigación en proyectos en el area de salud.",
+        "what-i-do":"¿Qué Hago?",
+        "jobs":{
+            "web":"Desarrollo Web",
+            "app":"Desarollo de Apps",
+            "design":"Diseño UX/UI",
+            "videogames":"Videojuegos"
+        }
     }
 };
