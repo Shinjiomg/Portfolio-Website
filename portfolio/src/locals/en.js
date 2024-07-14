@@ -52,7 +52,14 @@ export default {
             }
         },
     },
-    "resume":{
-        "resume":"Resume"
+    "resume": {
+        "resume": "Resume",
+        "education": "Education",
+        "experience": "Experience",
+        "abilities": "Abilities",
+        "knowledges": "Knowledges",
+        "problem-solving": "Problem Solving",
+        "team-work": "Team Work",
+        "progressive-learning": "Progressive Learning",
     }
 };

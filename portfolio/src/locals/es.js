@@ -53,10 +53,13 @@ export default {
         }
     },
     "resume": {
-        "resume": "Acerca de",
+        "resume": "Currículum",
         "education": "Educación",
         "experience": "Experiencia",
         "abilities":"Habilidades",
-        "knowledges":"Conocimientos"
+        "knowledges":"Conocimientos",
+        "problem-solving":"Resolución de Problemas",
+        "team-work":"Trabajo en Equipo",
+        "progressive-learning":"Aprendizaje Contínuo",
     }
 };
