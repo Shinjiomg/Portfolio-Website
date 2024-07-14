@@ -51,5 +51,8 @@ export default {
                 "videogames": "Inspired to start in the world of 2D video game creation."
             }
         },
+    },
+    "resume":{
+        "resume":"Resume"
     }
 };

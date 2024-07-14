@@ -21,7 +21,11 @@ import {
     BiCodeSlash,
     OiApps,
     BiWindowDesktop,
-    MdVideogameasset
+    MdVideogameasset,
+    IoSchool,
+    FaBriefcase,
+    SiBookstack,
+    HiSolidLightBulb
 } from "oh-vue-icons/icons";
 
 addIcons(BiGithub,
@@ -38,7 +42,11 @@ addIcons(BiGithub,
     BiCodeSlash,
     OiApps,
     BiWindowDesktop,
-    MdVideogameasset
+    MdVideogameasset,
+    IoSchool,
+    FaBriefcase,
+    SiBookstack,
+    HiSolidLightBulb
 );
 
 import messages from './locals/index';

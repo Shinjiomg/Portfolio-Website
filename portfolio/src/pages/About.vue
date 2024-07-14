@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </div>
-            <div class="custom-color rounded-3xl p-7">
+            <div class="bg-[#edf4fa] rounded-3xl p-7">
                 <div class="md:flex md:p-2">
                     <v-icon name="oi-apps" scale="3" class="mr-4" fill="#ff7690"></v-icon>
                     <div>
@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="custom-color rounded-3xl p-7">
+            <div class="bg-[#edf4fa] rounded-3xl p-7">
                 <div class="md:flex md:p-2">
                     <v-icon name="bi-window-desktop" scale="3" class="mr-4" fill="#ca7ee2"></v-icon>
                     <div>
@@ -52,9 +52,3 @@ export default {
     name: 'About'
 };
 </script>
-
-<style scoped>
-.custom-color {
-    background-color: #edf4fa;
-}
-</style>

@@ -44,12 +44,19 @@ export default {
             "app": "Desarrollo de Apps",
             "design": "Diseño UX/UI",
             "videogames": "Videojuegos",
-            "info":{
-                "web":"Diseñador, desarrollador y Webmaster de sitios web responsive y accesibles, utilizando HTML, CSS, JavaScript, Angular, PHP, Vue y Typescript.",
-                "app":"Co-autor, diseñador, desarrollador y SCRUM Master de un aplicativo móvil de salud para la Universidad Nacional utilizando IONIC y Typescript.",
-                "design":"Iniciado en el mundo del diseño UX/UI con Figma, colaborador en diseño y modelado de Wireframes y Mockups para aplicativo móvil 'PeriOpera'. ",
-                "videogames":"Inspirado en iniciar en el mundo de la creación de videojuegos en 2D."
+            "info": {
+                "web": "Diseñador, desarrollador y Webmaster de sitios web responsive y accesibles, utilizando HTML, CSS, JavaScript, Angular, PHP, Vue y Typescript.",
+                "app": "Co-autor, diseñador, desarrollador y SCRUM Master de un aplicativo móvil de salud para la Universidad Nacional utilizando IONIC y Typescript.",
+                "design": "Iniciado en el mundo del diseño UX/UI con Figma, colaborador en diseño y modelado de Wireframes y Mockups para aplicativo móvil 'PeriOpera'. ",
+                "videogames": "Inspirado en iniciar en el mundo de la creación de videojuegos en 2D."
             },
         }
+    },
+    "resume": {
+        "resume": "Acerca de",
+        "education": "Educación",
+        "experience": "Experiencia",
+        "abilities":"Habilidades",
+        "knowledges":"Conocimientos"
     }
 };
