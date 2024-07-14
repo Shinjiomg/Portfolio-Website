@@ -1,19 +1,19 @@
 <template>
-    <div class="flex flex-col md:flex-row min-h-screen background">
-        <aside class="md:text-black p-4 lg:mb-20 md:mt-20 md:left-0 md:top-0 md:bottom-0">
+    <div class="flex flex-col md:flex-row bg-[#F3F4F6] min-h-screen">
+        <aside class="md:text-black p-4 lg:mb-20 md:mt-20 fixed">
             <ProfileCard :profile-image="profileImage" :name="$t('profile.name')" :profession="$t('profile.profession')"
                 :social-links="socialLinks" :personal-info="translatedPersonalInfo"
                 @language-changed="handleLanguageChange" />
         </aside>
-        <main class="md:flex-1 p-4 md:ml-auto md:mr-auto md:max-w-6xl">
+        <main class="p-4 xl:mr-48 xl:ml-[354px]">
             <div class="bg-white rounded-3xl shadow-md p-7 mb-20 xl:h-full flex flex-col justify-between">
-                <router-view class="pt-8 md:p-8 flex-1"></router-view>
+                <router-view class="pt-8 md:p-8"></router-view>
                 <p class="text-sm text-gray-500 self-center">&copy; {{ new Date().getFullYear() }} Jhonatan
                     Becerra</p>
             </div>
         </main>
-        <MobileMenu  :menu-items="translatedMenuItems" />
-        <DesktopMenu class="md:ml-auto md:mr-0 md:left-auto md:right-0 md:top-0 md:bottom-0"
+        <MobileMenu :menu-items="translatedMenuItems" />
+        <DesktopMenu class="md:right-0 fixed h-screen"
             :menu-items="translatedMenuItems" />
     </div>
 </template>
@@ -79,9 +79,3 @@ export default {
     }
 };
 </script>
-
-<style scoped>
-.background {
-    background-color: #F3F4F6;
-}
-</style>
