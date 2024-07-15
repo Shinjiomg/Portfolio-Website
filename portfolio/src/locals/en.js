@@ -61,5 +61,14 @@ export default {
         "problem-solving": "Problem Solving",
         "team-work": "Team Work",
         "progressive-learning": "Progressive Learning",
+    },
+    "contact": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send",
+        "success": "Message sent succesfully!",
+        "error": "Failed to send the message... Please try again.",
+        "availability": "I'm currently available for work. <strong>Feel free to reach out!</strong>",
     }
 };

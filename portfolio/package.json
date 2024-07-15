@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "lottie-web": "^5.12.2",
     "material-icons": "^1.13.12",
     "oh-vue-icons": "^1.0.0-rc3",
