@@ -8,7 +8,7 @@
         <form @submit.prevent="sendEmail" class="space-y-4">
             <div>
                 <label for="name" class="block text-md font-montserrat">{{ $t('contact.name') }}</label>
-                <input type="text" id="name" v-model="form.name"
+                <input type="text" id="name" v-model="form.from_name"
                     class="mt-1 block w-full p-2 border border-gray-300 rounded-xl shadow-sm" required>
             </div>
             <div>
@@ -38,7 +38,7 @@ export default {
     data() {
         return {
             form: {
-                name: '',
+                from_name: '',
                 email: '',
                 message: ''
             }
