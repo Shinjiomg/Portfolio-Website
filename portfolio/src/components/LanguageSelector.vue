@@ -1,8 +1,8 @@
 <template>
-    <div class="language-selector">
-        <v-icon name="co-language" scale="1.2"></v-icon>
+    <div class="language-selector border-2 border-gray-300 rounded-3xl bg-white w-max mb-4">
+        <v-icon name="co-language" scale="1.2" class="ml-2"></v-icon>
         <select v-model="selectedLanguage" @change="changeLanguage"
-            class="text-sm font-montserrat font-semibold px-6 py-2 w-max rounded-3xl mb-4 bg-transparent">
+            class="text-sm font-montserrat font-semibold px-2 py-2 rounded-3xl outline-none mr-2 custom-select">
             <option value="es">Español</option>
             <option value="en">English</option>
         </select>
@@ -19,7 +19,7 @@ export default {
     methods: {
         changeLanguage() {
             this.$emit('language-changed', this.selectedLanguage);
-            localStorage.setItem('language', this.selectedLanguage); // Guarda el idioma en localStorage
+            localStorage.setItem('language', this.selectedLanguage);
         }
     },
     watch: {
@@ -28,8 +28,17 @@ export default {
         }
     },
     mounted() {
-        // Asegura que el idioma seleccionado en el select refleje el valor de localStorage
         this.selectedLanguage = localStorage.getItem('language') || (navigator.language.split('-')[0] === 'es' ? 'es' : 'en');
     }
 };
 </script>
+<style scoped>
+select option {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    /* text-sm */
+    background-color: white;
+    color: black;
+}
+</style>

@@ -8,7 +8,7 @@ export default {
             "location": "Ubicación",
             "birthday": "Fecha de Nacimiento"
         },
-        "download-cv": "Descargar HdV"
+        "download-cv": "Descargar CV"
     },
     "menu": {
         "about": "Acerca de",

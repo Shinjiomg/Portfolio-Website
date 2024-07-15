@@ -8,13 +8,13 @@
         </div>
         <div class="text-center mb-4">
             <h2 class="text-2xl font-roboto-slab mb-2"><strong>{{ name }}</strong></h2>
-            <LanguageSelector @language-changed="$emit('language-changed', $event)" />
+            <LanguageSelector @language-changed="$emit('language-changed', $event)" class="inline-block"/>
             <p class="text-sm font-montserrat font-semibold bg-gray-100 px-6 py-2 w-max rounded-3xl inline-block mb-4">
                 {{ profession }}</p>
             <SocialLinks :social-links="socialLinks" />
         </div>
         <PersonalInfo :personal-info="personalInfo" />
-        <div class="mt-4 text-center">
+        <div class="mt-8 text-center">
             <DownloadButton />
         </div>
     </div>
