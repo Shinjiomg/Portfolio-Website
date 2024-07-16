@@ -10,8 +10,8 @@
             <h2 class="text-2xl font-roboto-slab font-black">{{ name }}</h2>
             <p class="text-sm font-montserrat font-semibold px-6 w-max rounded-3xl inline-block mb-4">
                 {{ profession }}</p>
-            <LanguageSelector @language-changed="$emit('language-changed', $event)" />
             <div>
+                <LanguageSelector @language-changed="$emit('language-changed', $event)" />
                 <SocialLinks :social-links="socialLinks" />
             </div>
         </div>
