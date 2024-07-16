@@ -68,7 +68,11 @@ export default {
         "message": "Mensaje",
         "send": "Enviar",
         "success": "Mensaje enviado exitosamente!",
-        "error": "Error al enviar el mensaje... Por favor, vuelve a intentarlo.",
+        "error_message": "Error al enviar el mensaje... Por favor, vuelve a intentarlo.",
         "availability": "Actualmente estoy disponible para trabajar. <strong>¡No dudes en contactarme!</strong>",
+        "sending":"Enviando...",
+        "confirm_button":"Confirmar",
+        "success_message":"Gracias por tu mensaje ¡Espero que hablemos muy pronto!",
+        "error":"Error"
     }
 };

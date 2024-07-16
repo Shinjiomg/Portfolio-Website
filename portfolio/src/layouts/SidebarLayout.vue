@@ -13,7 +13,7 @@
             </div>
         </main>
         <MobileMenu :menu-items="translatedMenuItems" />
-        <DesktopMenu class="md:right-0 fixed h-screen"
+        <DesktopMenu class="md:right-0 fixed h-screen z-10"
             :menu-items="translatedMenuItems" />
     </div>
 </template>

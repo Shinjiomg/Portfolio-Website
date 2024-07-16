@@ -25,7 +25,8 @@ import {
     IoSchool,
     FaBriefcase,
     SiBookstack,
-    HiSolidLightBulb
+    HiSolidLightBulb,
+    RiLoader5Fill
 } from "oh-vue-icons/icons";
 
 addIcons(BiGithub,
@@ -46,7 +47,8 @@ addIcons(BiGithub,
     IoSchool,
     FaBriefcase,
     SiBookstack,
-    HiSolidLightBulb
+    HiSolidLightBulb,
+    RiLoader5Fill
 );
 
 import messages from './locals/index';

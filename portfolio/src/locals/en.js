@@ -68,7 +68,11 @@ export default {
         "message": "Message",
         "send": "Send",
         "success": "Message sent succesfully!",
-        "error": "Failed to send the message... Please try again.",
+        "error_message": "Failed to send the message... Please try again.",
         "availability": "I'm currently available for work. <strong>Feel free to reach out!</strong>",
+        "sending": "Sending...",
+        "confirm_button": "Confirm",
+        "success_message": "Thanks for your message. Hope we chat soon!",
+        "error": "Error"
     }
 };
