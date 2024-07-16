@@ -7,7 +7,7 @@
             <img :src="profileImage" class="rounded-3xl w-48 mx-auto -mt-28 mb-3" alt="Profile">
         </div>
         <div class="text-center mb-4">
-            <h2 class="text-2xl font-roboto-slab font-black">{{ name }}</h2>
+            <h1 class="text-2xl font-roboto-slab font-black">{{ name }}</h1>
             <p class="text-sm font-montserrat font-semibold px-6 w-max rounded-3xl inline-block mb-4">
                 {{ profession }}</p>
             <div>
