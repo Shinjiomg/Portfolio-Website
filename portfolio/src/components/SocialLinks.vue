@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-4 flex justify-center mb-4">
+    <div class="mt-2 flex justify-center mb-2">
         <a v-for="(social, index) in socialLinks" :key="index" :href="social.url"
             class="flex items-center justify-center rounded-3xl h-10 w-10 mx-3 bg-gray-100 mb-4 p-1 transition duration-200 ease-in-out transform hover:-translate-y-1 hover:scale-10"
             :style="{ backgroundColor: social.isHover ? '#4299e1' : '#F3F4F6' }" @mouseover="social.isHover = true"
