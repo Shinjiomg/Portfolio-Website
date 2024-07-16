@@ -1,4 +1,7 @@
 export default {
+    "meta": {
+        "content": "Descubre mi portafolio personal como desarrollador web, donde presento proyectos destacados, habilidades técnicas y experiencias en diseño y desarrollo de sitios web y aplicaciones. Explora mi trabajo y trayectoria en la creación de experiencias digitales memorables."
+    },
     "profile": {
         "name": "Jhonatan Becerra",
         "profession": "Desarrollador Web",
@@ -70,9 +73,9 @@ export default {
         "success": "Mensaje enviado exitosamente!",
         "error_message": "Error al enviar el mensaje... Por favor, vuelve a intentarlo.",
         "availability": "Actualmente estoy disponible para trabajar. <strong>¡No dudes en contactarme!</strong>",
-        "sending":"Enviando...",
-        "confirm_button":"Confirmar",
-        "success_message":"Gracias por tu mensaje ¡Espero que hablemos muy pronto!",
-        "error":"Error"
+        "sending": "Enviando...",
+        "confirm_button": "Confirmar",
+        "success_message": "Gracias por tu mensaje ¡Espero que hablemos muy pronto!",
+        "error": "Error"
     }
 };

@@ -1,4 +1,7 @@
 export default {
+    "meta": {
+        "content": "Explore my personal portfolio as a web developer, showcasing standout projects, technical skills, and experiences in designing and developing websites and applications. Discover my work and journey in creating memorable digital experiences."
+    },
     "profile": {
         "name": "Jhonatan Becerra",
         "profession": "Web Developer",
