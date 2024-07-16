@@ -1,5 +1,5 @@
-import enMessages from './en';
-import esMessages from './es';
+import enMessages from './en.json';
+import esMessages from './es.json';
 
 const messages = {
     en: enMessages,

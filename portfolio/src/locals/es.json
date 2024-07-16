@@ -1,4 +1,4 @@
-export default {
+{
     "meta": {
         "content": "Descubre mi portafolio personal como desarrollador web, donde presento proyectos destacados, habilidades técnicas y experiencias en diseño y desarrollo de sitios web y aplicaciones. Explora mi trabajo y trayectoria en la creación de experiencias digitales memorables."
     },
@@ -52,7 +52,7 @@ export default {
                 "app": "Co-autor, diseñador, desarrollador y SCRUM Master de un aplicativo móvil de salud para la Universidad Nacional utilizando IONIC y Typescript.",
                 "design": "Iniciado en el mundo del diseño UX/UI con Figma, colaborador en diseño y modelado de Wireframes y Mockups para aplicativo móvil 'PeriOpera'. ",
                 "videogames": "Inspirado en iniciar en el mundo de la creación de videojuegos en 2D."
-            },
+            }
         }
     },
     "resume": {
@@ -63,7 +63,7 @@ export default {
         "knowledges": "Conocimientos",
         "problem-solving": "Resolución de Problemas",
         "team-work": "Trabajo en Equipo",
-        "progressive-learning": "Aprendizaje Contínuo",
+        "progressive-learning": "Aprendizaje Contínuo"
     },
     "contact": {
         "name": "Nombre",
@@ -78,4 +78,4 @@ export default {
         "success_message": "Gracias por tu mensaje ¡Espero que hablemos muy pronto!",
         "error": "Error"
     }
-};
+}
