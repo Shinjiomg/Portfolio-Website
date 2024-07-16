@@ -13,8 +13,7 @@
             </div>
         </main>
         <MobileMenu :menu-items="translatedMenuItems" />
-        <DesktopMenu class="md:right-0 fixed h-screen z-10"
-            :menu-items="translatedMenuItems" />
+        <DesktopMenu class="md:right-0 fixed h-screen z-10" :menu-items="translatedMenuItems" />
     </div>
 </template>
 <script>
@@ -52,8 +51,9 @@ export default {
             socialLinks: [
                 { url: 'https://github.com/Shinjiomg', icon: 'bi-github', color: '#000' },
                 { url: 'https://www.linkedin.com/in/jhonatandavidbecerradonado-frontend/', icon: 'co-linkedin-in', color: '#2980b9' },
-                { url: 'https://www.facebook.com/jhonatan7w7/', icon: 'co-facebook-f', color: '#1DA1F2' },
                 { url: 'https://www.instagram.com/shannalotte', icon: 'bi-instagram', color: '#E1306C' },
+                { url: 'https://x.com/Shannalote', icon: 'bi-twitter', color: '#2980b9' },
+                { url: 'https://www.twitch.tv/shannalotte', icon: 'bi-twitch', color: '#8E43AD' },
             ],
             personalInfo: [
                 { label: 'phone', value: '(+57) 3015703750', icon: 'ri-smartphone-line', iconColor: '#1CA085' },

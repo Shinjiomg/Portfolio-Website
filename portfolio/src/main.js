@@ -26,7 +26,9 @@ import {
     FaBriefcase,
     SiBookstack,
     HiSolidLightBulb,
-    RiLoader5Fill
+    RiLoader5Fill,
+    BiTwitch,
+    BiTwitter
 } from "oh-vue-icons/icons";
 
 addIcons(BiGithub,
@@ -48,7 +50,9 @@ addIcons(BiGithub,
     FaBriefcase,
     SiBookstack,
     HiSolidLightBulb,
-    RiLoader5Fill
+    RiLoader5Fill,
+    BiTwitch,
+    BiTwitter
 );
 
 import messages from './locals/index';
