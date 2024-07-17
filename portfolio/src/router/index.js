@@ -4,6 +4,8 @@ import Resume from '../pages/Resume.vue';
 import Contact from '../pages/Contact.vue';
 import ErrorPage from '../pages/ErrorPage.vue';
 import SidebarLayout from '../layouts/SidebarLayout.vue';
+import Blog from '../pages/Blog.vue'
+import Work from '../pages/Work.vue'
 
 const routes = [
     {
@@ -17,6 +19,8 @@ const routes = [
             { path: 'about', component: About },
             { path: 'resume', component: Resume },
             { path: 'contact', component: Contact },
+            { path: 'blog', component: Blog },
+            { path: 'work', component: Work },
         ]
     },
     {

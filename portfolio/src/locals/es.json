@@ -15,8 +15,10 @@
     },
     "menu": {
         "about": "Acerca de",
-        "resume": "Currículum",
-        "contact": "Contacto"
+        "resume": "Perfil",
+        "contact": "Contacto",
+        "blog": "Blog",
+        "work": "Trabajos"
     },
     "month": {
         "january": "Enero",
@@ -36,7 +38,9 @@
         "title": "Página no encontrada :(",
         "message": "Lo siento, la página que buscas no existe.",
         "button": "Volver",
-        "code": "ERROR 404"
+        "code": "ERROR 404",
+        "building":"Página en desarrollo"
+
     },
     "about": {
         "me": "Acerca de Mí",

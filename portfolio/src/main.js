@@ -28,7 +28,9 @@ import {
     HiSolidLightBulb,
     RiLoader5Fill,
     BiTwitch,
-    BiTwitter
+    BiTwitter,
+    MdNewspaper,
+    IoBriefcase
 } from "oh-vue-icons/icons";
 
 addIcons(BiGithub,
@@ -52,7 +54,9 @@ addIcons(BiGithub,
     HiSolidLightBulb,
     RiLoader5Fill,
     BiTwitch,
-    BiTwitter
+    BiTwitter,
+    MdNewspaper,
+    IoBriefcase
 );
 
 import messages from './locals/index';

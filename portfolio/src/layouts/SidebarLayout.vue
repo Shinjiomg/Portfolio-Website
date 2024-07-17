@@ -64,6 +64,8 @@ export default {
                 { label: 'about', link: '/about', icon: 'fa-regular-id-card' },
                 { label: 'resume', link: '/resume', icon: 'ri-file-user-line' },
                 { label: 'contact', link: '/contact', icon: 'md-contacts' },
+                { label: 'blog', link: '/blog', icon: 'md-newspaper' },
+                { label: 'work', link: '/work', icon: 'io-briefcase' },
             ],
         };
     },

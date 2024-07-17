@@ -16,7 +16,9 @@
         "menu": {
             "about": "About",
             "resume": "Resume",
-            "contact": "Contact"
+            "contact": "Contact",
+            "blog": "Blog",
+            "work":" My Work"
         },
         "month": {
             "january": "January",
@@ -36,7 +38,8 @@
             "title": "Page not found :(",
             "message": "Sorry, the page you're searching doesn't exist.",
             "button": "Go back",
-            "code": "ERROR 404"
+            "code": "ERROR 404",
+            "building":"Page in development"
         },
         "about": {
             "me": "About Me",
